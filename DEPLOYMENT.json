@@ -1,0 +1,9 @@
+{
+  "site_id": "5edb36b5-1bf1-46ad-9914-57815c42ee36",
+  "deploy_id": "6ae40532cb14ee5517bc116a",
+  "url": "https://depauw-last-halloweekend.netlify.app",
+  "dashboard": "https://app.netlify.com/projects/depauw-last-halloweekend",
+  "status": "Public and live; verified October 30, 2026 UTC.",
+  "database": "Provisioned successfully; game migration loaded during deployment.",
+  "verification": "8 live checks passed, including independent authenticated players, concurrent actions, persistence, all three chapters with Perfect Victory, play again, and lobby capacity. Two separate browser sessions verified synchronization and refresh recovery."
+}

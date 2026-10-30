@@ -1,0 +1,36 @@
+{
+  "name": "depauw-last-halloweekend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run build && node --import tsx scripts/dev.ts --built",
+    "build": "tsc --noEmit && vite build",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "package:functions": "node scripts/package-functions.mjs",
+    "netlify:dev": "netlify dev",
+    "deploy": "netlify deploy --prod",
+    "dev:hot": "node --import tsx scripts/dev.ts",
+    "format": "prettier --write src server shared tests scripts netlify/functions"
+  },
+  "dependencies": {
+    "@netlify/database": "latest",
+    "@netlify/functions": "latest",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "latest",
+    "@netlify/zip-it-and-ship-it": "latest",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "latest",
+    "netlify-cli": "latest",
+    "prettier": "^3.9.10",
+    "tsx": "latest",
+    "typescript": "^5.9.0",
+    "vite": "latest"
+  }
+}
